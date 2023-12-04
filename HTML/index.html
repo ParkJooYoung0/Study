@@ -2,27 +2,41 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>텍스트 태그 연습</title>
+        <title>영역구분하기</title>
     </head>
     <body>
-        <h1>제목을 표시하는 큰 텍스트 태그</h1>
-        <p>문단을 표시하는 태그1</p>
+        <h1> Hello</h1>
         <hr>
-        <h2>작은제목을 표시하는 태그</h2>
-        <p>문단을 표시하는 태그2</p>
+        <div id="sanrio">
+        <h2 class="title"><span>Sanrio</span> friends</h2>
+        <img src="images/sanrio.jpeg"
+        width="300" title="산리오색찰공부"
+        alt="hello kitty">
+        <p>Hello kitty~!!</p>
+        </div>
+        <hr>
+        <div id="today">
+        <h2 class="title">오늘은 <span>2024년 12월 4일</span></h2>
+        <p>오늘 공부도 화이팅!</p>
+
+        <a href="https://www.google.com/" target="_self">
+            구글로 바로가기
+        </a>
         <br>
-        <p>
-        br 테그는 엔터(줄바꿈)
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        nbsp는 스페이스(공백)
-        </p>
-        <p>
-        <strong>p 테그 안 굵은 글자</strong>
-        <em>p테그 안 기울어진 글자</em>
-        <mark>p테그 안 형광색으로 칠한 글자</mark>
-        <p> 불록안에 블록을 넣으면 층이 생긴다</p>
-        </p>
+        <a href="https://www.naver.com/" target="_blank">
+            네이버 바로가기
+        </a>
+        <br>
+        <a href="file:///Users/kimsoohyun/Desktop/Study/HTML/index2.html"
+        target="_blank"> 다른 산리오 이미지 보기
+        </a>
+        <br>
+        <a href="tel:010-1234-5678">
+            010-1234-5678
+        </a>
+        <br>
+        <a href=mailto:zz0912ss@naver.com>메일보내기</a>
+        </div>
 
     </body>
 </html>
