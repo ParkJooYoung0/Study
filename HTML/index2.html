@@ -4,6 +4,7 @@
           <meta charset="uts-8">
           <title>2024.12.5</title>
         </head>
+
         <body>
           <h1>맛있는 음식 목록</h1>
           <ul>
@@ -14,6 +15,7 @@
             <li>핫도그</li>
           </ul>
           <hr>
+          
           <h1>가고싶은 여행지 순위</h1>
           <ol>
             <li><mark>그리스</mark></li>
@@ -24,10 +26,24 @@
           </ol>
           <br>
           <hr>
+
           <input name="birthday" type="date"/><br><br>
           <input name="text" type="text" maxlength="10" placeholder="여기에 입력하세요"/><br><br>
           <input name="color" type="color"/>원하는 색을 고르세요<br><br>
           <input name="hight" type="range" max="100" min="0" step="5"/><br><br>
           <input name="push" type="button" value="확인"/><br><br>
+          <hr><br>
+
+          <h1>좋아하는 동물 고르기</h1>
+          <select name="animal" multiple>
+            <option value="dog">강아지</option>
+            <option value="cat" selected>고양이</option>
+            <option value="rabbit">토끼</option>
+            <option value="monkey">원숭이</option>
+          </select>
+          <br>
+
+          <textarea name="content"
+          rows="5" cols="15">여기 작성하세요.</textarea>
         </body>
     </html>
