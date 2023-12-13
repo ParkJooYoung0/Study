@@ -4,29 +4,42 @@
         <meta charset="UTF-8">
         <title>HTML문서</title>
         <style>
-            #a{width:100px; height:100px;
-            background-color:pink;
-            position: relative;
-            top:100px; left:400px;
-        }
-        #b{width:200px; height:200px;
-            background-color:orange;
-            position: relative;
-            border: 1px solid black;
-        }
-        .abs{
-            width:100px; height:100px;
-            background-color:plum;
-            position: absolute;
-        top:100px;
-        }
+            .pos{
+                width:200px; height:200px;
+                background: plum;
+                position: sticky; 
+                bottom:0; 
+            }
+            .pos2{
+                width:200px; height:200px;
+                background:red;
+                position:fixed;
+                top:0; left:500;
+            }
         </style>
     </head>
     <body>
-        <div id="a"></div>
-        <div id="b"></div>
-        <div id="b">
-            <div class="abs"></div>
+        <div>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+            첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        </div>
+        <div class="pos2"></div>
+        <div class="pos"></div>
+        <div>
+            두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>
+            두번째<br>두번째<br>두번째<br>두번째<br>
         </div>
     </body>
 </html>
