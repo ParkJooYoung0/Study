@@ -4,28 +4,23 @@
         <meta charset="UTF-8">
         <title>HTML문서</title>
         <style>
-           .container{ 
-            display: flex;
-            width:300px; height:300px;
-            border:2px solid black;
-            justify-content: space-between;
-            align-items:center;
-            flex-wrap: wrap-reverse;
-         }
-           .item{
-                width:200px; height:60px;
-                background: plum;
+            p > span{
+                color: red;
             }
-            .self{
-                align-self: flex-start;
+            h1 +p{
+                color:blue;
+            }
+            .text+p{
+                color:plum;
             }
         </style>
     </head>
     <body>
-    <div class="container">
-        <div class="item">1</div>
-        <div class="item self">2</div>
-        <div class="item">3</div>
-    </div>
+        <h1>선택자연습하기</h1>
+        <p> 1번 문단 입니다</p>
+        <p class="text"> 2번문단 입니다. </p>
+        <p id="unique">3번 문단입니다. </p>
+        <p class="text">4번 문단입니다. </p>
+        <p>5번문단입니다. <span>스판입니다.</span> </p>
     </body>
 </html>
