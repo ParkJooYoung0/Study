@@ -3,47 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가변 레이아웃</title>
+    <title>calc 함수</title>
     <style>
-        * {box-sizing: border-box}
-        .container {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-       }
-       header {
-        width: 100%;
-        height: 100px;
-        background-color: green;
-       }
-       main {
-        float: left;
-        width: 67%;
-        height: 300px;
-        padding:10%;
-        background-color: orange;
-       }
-       aside {
-        float: right;
-        width: 33%;
-        height: 300px;
-        padding:10%;
-        background-color: plum;
-       }
-       footer {
-        clear: both;
-        width: 100%;
-        height: 100px;
-        background-color: cornflowerblue;
-       }
+        .message {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            padding: 0.5em;
+            border: 1px solid #000;
+            font-size: 1.5em;
+        }
+        .message_text {
+            width: calc(100% - 100px);
+            height: 100%;
+            border: none;
+            resize: none;
+        }
+        .message_text:focus { outline: none; }
+        .message_send { 
+            width: 100px;
+            height: 100%;
+            border-radius: 8px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
-    <div class='container'>
-        <header>header</header>
-        <main>main</main>
-        <aside>aside</aside>
-        <footer>footer</footer>
+    <div class="message">
+        <textarea class="message_text"></textarea>
+        <button class="message_send">전송</button>
     </div>
 </body>
 </html>
