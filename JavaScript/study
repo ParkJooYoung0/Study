@@ -1,20 +1,14 @@
-console.log('hello world')
-VM150:1 hello world
-undefined
-console.log('hell
-VM217:1 Uncaught SyntaxError: Invalid or unexpected token
-console.log('hello world')
-VM241:1 hello world
-undefined
-`안녕하세요₩₩₩₩\n`
-'안녕하세요₩₩₩₩\n'
-typwof``;
-VM329:1 Uncaught ReferenceError: typwof is not defined
-    at <anonymous>:1:1
-(익명) @ VM329:1
-typeof '';
-'string'
-'how'\re you?'
-VM406:1 Uncaught SyntaxError: Invalid or unexpected token
-'how\'re you?'
-"how're you?"
+'바나나' + '사과'
+'바나나사과'
+'바나나' - '사과'
+NaN
+'바나나' * '사과'
+NaN
+5 /2
+2.5
+5 % 2
+1
+'안녕하세요?' + '박주영입니다'
+'안녕하세요?박주영입니다'
+'안녕하세요? ' + '박주영입니다'
+'안녕하세요? 박주영입니다'
