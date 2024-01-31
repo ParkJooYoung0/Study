@@ -1,0 +1,20 @@
+console.log('hello world')
+VM150:1 hello world
+undefined
+console.log('hell
+VM217:1 Uncaught SyntaxError: Invalid or unexpected token
+console.log('hello world')
+VM241:1 hello world
+undefined
+`안녕하세요₩₩₩₩\n`
+'안녕하세요₩₩₩₩\n'
+typwof``;
+VM329:1 Uncaught ReferenceError: typwof is not defined
+    at <anonymous>:1:1
+(익명) @ VM329:1
+typeof '';
+'string'
+'how'\re you?'
+VM406:1 Uncaught SyntaxError: Invalid or unexpected token
+'how\'re you?'
+"how're you?"
