@@ -1,52 +1,12 @@
-5
-5
-50000
-50000
-5e4
-50000
-0.0005
-0.0005
-5e-4
-0.0005
-0111
-73
-0111
-73
-0x111
-273
-0b111
-7
-typeof 0x1a1
-'number'
-typeof NAN
-'undefined'
-parseInt('123')
-123
-Number(123)
-123
-Number('123')
-123
-typeof parseInt('123')
-'number'
-pareInt('3.14')
-VM1338:1 Uncaught ReferenceError: pareInt is not defined
-    at <anonymous>:1:1
-(익명) @ VM1338:1
-parseInt('123')
-123
-pareFLOAT('123')
-VM1459:1 Uncaught ReferenceError: pareFLOAT is not defined
-    at <anonymous>:1:1
-(익명) @ VM1459:1
-parseFloat('123')
-123
-Number('3.14')
-3.14
-parseInt('3월')
-3
-Number('3월')
-NaN
-prompt()
-'33'
-2**4
-16
+0.1 + 0.2
+0.30000000000000004
+010101010101010101
+285942833483841
+1 / 2
+0.5
+1 / 8
+0.125
+0.3 - 0.1
+0.19999999999999998
+(0.3 * 10) - (0.1 * 10) / 10;
+2.9
