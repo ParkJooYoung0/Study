@@ -1,12 +1,56 @@
-0.1 + 0.2
-0.30000000000000004
-010101010101010101
-285942833483841
-1 / 2
-0.5
-1 / 8
-0.125
-0.3 - 0.1
-0.19999999999999998
-(0.3 * 10) - (0.1 * 10) / 10;
-2.9
+5 < 3
+false
+5 > 3
+true
+5 >=5;
+true
+5 <= 4;
+false
+5 == 5
+true
+5 != 5;
+false
+5 != 6;
+true
+NaN == NaN;
+false
+NaN != NaN;
+true
+true > false;
+true
+'b' > 'a';
+true
+'ad' > 'ab';
+true
+'&'.chrCodeAt();
+VM603:1 Uncaught TypeError: "&".chrCodeAt is not a function
+    at <anonymous>:1:5
+(익명) @ VM603:1
+'a'.charCodeAt()
+97
+'&'.charCodeAt()
+38
+'b'.charCodeAt()
+98
+'3' < 5;
+true
+'abc' < 5;
+false
+'0' < true;
+true
+'1' == 1;
+true
+1 == true;
+true
+1 == '1';
+true
+'1' === 1;
+false
+1 === true;
+false
+1 === '1'
+false
+1 != 1;
+false
+1 !== 1;
+false
