@@ -1,34 +1,24 @@
-let empty;
+let change = '바꾸기';
 undefined
-empty;
+change = '바꿨다';
+'바꿨다'
+change = 'undefined';
+'undefined'
+change = 'null';
+'null'
+hello = null;
+null
+let number = '5';
 undefined
-let empty; let empty;
-VM2629:1 Uncaught SyntaxError: Identifier 'empty' has already been declared
-let $_ = 'hello'
+number = numbrt + 3;
+VM3662:1 Uncaught ReferenceError: numbrt is not defined
+    at <anonymous>:1:1
+(익명) @ VM3662:1
+number = number + 3
+'53'
+number = number + 3;
+'533'
+let number = 16
 undefined
-$_
-'hello'
-let 한글 = '위대하다'
-undefined
-한글
-'위대하다'
-let $ = 'hi'
-undefined
-$
-'hi'
-let _ ='bye'
-undefined
-_
-'bye'
-let apple = ' apple'
-undefined
-apple
-' apple'
-let 2apple = apple
-VM3011:1 Uncaught SyntaxError: Invalid or unexpected token
-let let = '123'
-VM3042:1 Uncaught SyntaxError: let is disallowed as a lexically bound name
-let class = '345';
-VM3087:1 Uncaught SyntaxError: Unexpected token 'class'
-let const = '678';
-VM3141:1 Uncaught SyntaxError: Unexpected token 'const'
+number /= 4;
+4
