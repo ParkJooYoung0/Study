@@ -1,20 +1,34 @@
-et string = 234565432;
+let empty;
 undefined
-string
-234565432
-let numberone = 123
+empty;
 undefined
-let numbertwo = 345
+let empty; let empty;
+VM2629:1 Uncaught SyntaxError: Identifier 'empty' has already been declared
+let $_ = 'hello'
 undefined
-numberone + numbertwo
-468
-console.log(string)
-VM2322:1 234565432
+$_
+'hello'
+let 한글 = '위대하다'
 undefined
-let total = 200 + 8000;
+한글
+'위대하다'
+let $ = 'hi'
 undefined
-console
-console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …}
-window
-Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
-document
+$
+'hi'
+let _ ='bye'
+undefined
+_
+'bye'
+let apple = ' apple'
+undefined
+apple
+' apple'
+let 2apple = apple
+VM3011:1 Uncaught SyntaxError: Invalid or unexpected token
+let let = '123'
+VM3042:1 Uncaught SyntaxError: let is disallowed as a lexically bound name
+let class = '345';
+VM3087:1 Uncaught SyntaxError: Unexpected token 'class'
+let const = '678';
+VM3141:1 Uncaught SyntaxError: Unexpected token 'const'
