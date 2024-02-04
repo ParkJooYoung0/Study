@@ -1,25 +1,20 @@
-console.log('Hello,World')
-VM1568:1 Hello,World
+et string = 234565432;
 undefined
-1 + 3
-4
-typeof un
-'undefined'
-typeof undefined
-'undefined'
+string
+234565432
+let numberone = 123
 undefined
+let numbertwo = 345
 undefined
-undefined == false
-false
-undefined == 0
-false
-! undefined
-true
-undefined == null;
-true
-undefined === null;
-false
-!!null
-false
-typeof null
-'object'
+numberone + numbertwo
+468
+console.log(string)
+VM2322:1 234565432
+undefined
+let total = 200 + 8000;
+undefined
+console
+console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …}
+window
+Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
+document
