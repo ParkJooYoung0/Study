@@ -1,34 +1,67 @@
-cost value = '상수입니다';
-VM119:1 Uncaught SyntaxError: Unexpected identifier 'value'
-const value = '상수입니다';
+if (로그인한 사용자)
+정보를 보여준다;
+VM867:1 Uncaught SyntaxError: Unexpected identifier '사용자'
+if (로그인한 사용자)
+VM1058:1 Uncaught SyntaxError: Unexpected identifier '사용자'
+if (true) {
+    console.log('hello if!');
+}
+VM1174:2 hello if!
 undefined
-value = '바꿀 수 없습니다';
-VM275:1 Uncaught TypeError: Assignment to constant variable.
-    at <anonymous>:1:7
-(익명) @ VM275:1
-const value2;
-VM330:1 Uncaught SyntaxError: Missing initializer in const declaration
-var varuable = '다시 선언 가능';
+if (false) {
+    console.log('hello if!');
+}
 undefined
-var varuable = '다시 선언 가능';
+let condition = true;
 undefined
-let varuable = '다시 선언 불가능';
-VM541:1 Uncaught SyntaxError: Identifier 'varuable' has already been declared
-let a = 5 
+if (condition) {
+    console.log('hello if!');
+}
+VM1349:2 hello if!
 undefined
-let b = 3
+if (0) {
+    console.log('hello if!');
+}
 undefined
-a
-5
-b
-3
-let c = a
+if (true) {
+    console.log('hello if!');
+    console log('hello again');
+}
+VM1451:3 Uncaught SyntaxError: Unexpected identifier 'log'
+if (true) {
+    console.log('hello if!');
+    console.log('hello again');
+}
+VM1464:2 hello if!
+VM1464:3 hello again
 undefined
-c
-5
-a = b
-3
-b = c
-5
-c = null;
-null
+let value = '사과';
+undefined
+let condition = true;
+undefined
+let value = '사과';
+let condition = true;
+if (condition) {
+    value('바나나');
+}
+console.log(value);
+VM1815:4 Uncaught TypeError: value is not a function
+    at <anonymous>:4:5
+(익명) @ VM1815:4
+let value = '사과';
+   let condition = true;
+   if (condition) {
+    value('바나나');
+   }
+   console.log(value);
+VM1829:4 Uncaught TypeError: value is not a function
+    at <anonymous>:4:5
+(익명) @ VM1829:4
+let value = 'apple';
+    let condition = true;
+    if (condition) {
+        value = 'banana';
+    }
+    console.log(value);
+VM2100:6 banana
+undefined
