@@ -1,67 +1,160 @@
-if (로그인한 사용자)
-정보를 보여준다;
-VM867:1 Uncaught SyntaxError: Unexpected identifier '사용자'
-if (로그인한 사용자)
-VM1058:1 Uncaught SyntaxError: Unexpected identifier '사용자'
-if (true) {
-    console.log('hello if!');
+if (false) {
+    console.log('hello if);
+} else {
+    console.log('hello else;);
 }
-VM1174:2 hello if!
+VM2344:2 Uncaught SyntaxError: Invalid or unexpected token
+if (false) {}
 undefined
 if (false) {
-    console.log('hello if!');
+    console.log ('hello if');
 }
+else {
+    console.log ('hello else');
+}
+VM2562:5 hello else
 undefined
-let condition = true;
-undefined
+let value = 'apple';
+let condition = false; 
 if (condition) {
-    console.log('hello if!');
+    value = 'banana';
 }
-VM1349:2 hello if!
-undefined
-if (0) {
-    console.log('hello if!');
-}
-undefined
-if (true) {
-    console.log('hello if!');
-    console log('hello again');
-}
-VM1451:3 Uncaught SyntaxError: Unexpected identifier 'log'
-if (true) {
-    console.log('hello if!');
-    console.log('hello again');
-}
-VM1464:2 hello if!
-VM1464:3 hello again
-undefined
-let value = '사과';
-undefined
-let condition = true;
-undefined
-let value = '사과';
-let condition = true;
-if (condition) {
-    value('바나나');
+else {
+    value = 'grape';
 }
 console.log(value);
-VM1815:4 Uncaught TypeError: value is not a function
-    at <anonymous>:4:5
-(익명) @ VM1815:4
-let value = '사과';
-   let condition = true;
-   if (condition) {
-    value('바나나');
-   }
-   console.log(value);
-VM1829:4 Uncaught TypeError: value is not a function
-    at <anonymous>:4:5
-(익명) @ VM1829:4
-let value = 'apple';
-    let condition = true;
-    if (condition) {
-        value = 'banana';
-    }
-    console.log(value);
-VM2100:6 banana
+VM2908:9 grape
+undefined
+const score = 75;
+if (score >= 90) {
+    console.log('A+);
+} else if (90 > score && score >=80) {
+    console.log('A');
+} else if (score <70 && score >=60) {
+    console.log('B+');
+} else {
+    console.log('F');
+}
+VM3425:3 Uncaught SyntaxError: Invalid or unexpected token
+const score = 75;
+if (score >= 90) {
+    console.log('A+');
+} else if (90 > score && score >=80) {
+    console.log('A');
+} else if (score <70 && score >=60) {
+    console.log('B+');
+} else {
+    console.log('F');
+}
+VM3436:9 F
+undefined
+const score = 75;
+if (score >= 90) {
+    console.log('A+');
+} else if (90 > score && score >=80) {
+    console.log('A');
+} else if (score <80 && score >=70) {
+    console.log('B+');
+} else {
+    console.log('F');
+}
+VM3442:7 B+
+undefined
+const score = 75;
+if (score >= 90) {
+    console.log('A+');
+} else if (score >=80) {
+    console.log('A');
+} else if (score >=70) {
+    console.log('B+');
+} else {
+    console.log('F');
+}
+VM3446:7 B+
+undefined
+let first = true;
+let second = false;
+if (first) {
+    console.log('첫번째 조건 충족');
+  if(second) {
+    console.log('두번째 조건도 충족');
+} else {
+    console.log('두번째 조건은 불충족');
+}
+} else {
+    console.log('첫번째 조건 불충족');
+}
+VM4027:4 첫번째 조건 충족
+VM4027:8 두번째 조건은 불충족
+undefined
+let value = 'A';
+switch (value) {
+    case 'A';
+        console.log('A');
+}
+VM4167:3 Uncaught SyntaxError: Unexpected token ';'
+let value = 'A';
+switch (value) {
+    case 'A':
+        console.log('A');
+}
+VM4171:4 A
+undefined
+let value = 'b'
+switch (value) {
+    case 'a' : 
+        console.log('a');
+    case 'b' :
+        console.log('b');
+    case 'c' :
+        console.log('c');
+}
+VM4425:6 b
+VM4425:8 c
+undefined
+let value = 'b'
+switch (value) {
+    case 'a' : 
+        console.log('a');
+        break;
+    case 'b' :
+        console.log('b');
+        break;
+    case 'c' :
+        console.log('c');
+        break;
+}
+VM4450:7 b
+undefined
+let value = 'b'
+switch (value) {
+    case 'a' : 
+        console.log('a');
+        break;
+    case 'b' :
+        console.log('b');
+        break;
+    case 'c' :
+        console.log('c');
+        break;
+    default : 
+        console.log('none');
+}
+VM4508:7 b
+undefined
+let value = 'f'
+switch (value) {
+    case 'a' : 
+        console.log('a');
+        break;
+    case 'b' :
+        console.log('b');
+        break;
+    case 'c' :
+        console.log('c');
+        break;
+    default : 
+        console.log('none');
+}
+VM4512:13 none
 undefined
