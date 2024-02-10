@@ -1,160 +1,62 @@
-if (false) {
-    console.log('hello if);
+5 > 0 ? '참입니다' : '거짓입니다';
+'참입니다'
+let value = 5 < 0 ? '참입니다' : '거짓입니다'
+undefined
+value
+'거짓입니다'
+if(condition) {
+    value = '참';
 } else {
-    console.log('hello else;);
-}
-VM2344:2 Uncaught SyntaxError: Invalid or unexpected token
-if (false) {}
-undefined
-if (false) {
-    console.log ('hello if');
-}
-else {
-    console.log ('hello else');
-}
-VM2562:5 hello else
-undefined
-let value = 'apple';
-let condition = false; 
-if (condition) {
-    value = 'banana';
-}
-else {
-    value = 'grape';
+    value = '거짓';
 }
 console.log(value);
-VM2908:9 grape
+VM635:1 Uncaught ReferenceError: condition is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM635:1
+let condition1 =true;
 undefined
-const score = 75;
-if (score >= 90) {
-    console.log('A+);
-} else if (90 > score && score >=80) {
-    console.log('A');
-} else if (score <70 && score >=60) {
-    console.log('B+');
+let condition1 = true;
+let condition2 = false;
+let value = condition1 ? (condition2 '둘다참' : condition1만 참') : condition이 거짓';
+VM1048:3 Uncaught SyntaxError: Unexpected string
+let condition1 = true;
+let condition2 = false;
+let value = condition1 ? (condition2 ? '둘다참' : condition1만 참') : condition이 거짓';
+VM1057:3 Uncaught SyntaxError: Unexpected identifier '참'
+let condition1 = true;
+let condition2 = false;
+let value = condition1 ? (condition2 ? '둘 다 참' : condition1만 참') : 'condition이 거짓';
+VM1062:3 Uncaught SyntaxError: Unexpected identifier '참'
+let condition1 = true;
+let condition2 = false;
+let value = condition1 ? (condition2 ? '둘 다 참' : 'condition1만 참') : 'condition1이 거짓';
+console.log(value);
+VM1170:4 condition1만 참
+undefined
+let cond = true;
+let value = '';
+if(cond) {
+    value = '참';
 } else {
-    console.log('F');
+    value = '거짓';
 }
-VM3425:3 Uncaught SyntaxError: Invalid or unexpected token
-const score = 75;
-if (score >= 90) {
-    console.log('A+');
-} else if (90 > score && score >=80) {
-    console.log('A');
-} else if (score <70 && score >=60) {
-    console.log('B+');
-} else {
-    console.log('F');
-}
-VM3436:9 F
+'참'
+let value = cond ? '참' : '거짓';
 undefined
-const score = 75;
-if (score >= 90) {
-    console.log('A+');
-} else if (90 > score && score >=80) {
-    console.log('A');
-} else if (score <80 && score >=70) {
-    console.log('B+');
-} else {
-    console.log('F');
-}
-VM3442:7 B+
+let cond = true;
+let value = cond ? '참' : '거짓';
 undefined
-const score = 75;
-if (score >= 90) {
-    console.log('A+');
-} else if (score >=80) {
-    console.log('A');
-} else if (score >=70) {
-    console.log('B+');
-} else {
-    console.log('F');
-}
-VM3446:7 B+
-undefined
-let first = true;
-let second = false;
-if (first) {
-    console.log('첫번째 조건 충족');
-  if(second) {
-    console.log('두번째 조건도 충족');
-} else {
-    console.log('두번째 조건은 불충족');
-}
-} else {
-    console.log('첫번째 조건 불충족');
-}
-VM4027:4 첫번째 조건 충족
-VM4027:8 두번째 조건은 불충족
-undefined
-let value = 'A';
-switch (value) {
-    case 'A';
-        console.log('A');
-}
-VM4167:3 Uncaught SyntaxError: Unexpected token ';'
-let value = 'A';
-switch (value) {
-    case 'A':
-        console.log('A');
-}
-VM4171:4 A
-undefined
-let value = 'b'
-switch (value) {
-    case 'a' : 
-        console.log('a');
-    case 'b' :
-        console.log('b');
-    case 'c' :
-        console.log('c');
-}
-VM4425:6 b
-VM4425:8 c
-undefined
-let value = 'b'
-switch (value) {
-    case 'a' : 
-        console.log('a');
+let cond = true;
+let value = '';
+switch (cond) {
+    case true :
+        value : '참';
         break;
-    case 'b' :
-        console.log('b');
-        break;
-    case 'c' :
-        console.log('c');
+    case false : 
+        value = '거짓'
         break;
 }
-VM4450:7 b
-undefined
-let value = 'b'
-switch (value) {
-    case 'a' : 
-        console.log('a');
-        break;
-    case 'b' :
-        console.log('b');
-        break;
-    case 'c' :
-        console.log('c');
-        break;
-    default : 
-        console.log('none');
-}
-VM4508:7 b
-undefined
-let value = 'f'
-switch (value) {
-    case 'a' : 
-        console.log('a');
-        break;
-    case 'b' :
-        console.log('b');
-        break;
-    case 'c' :
-        console.log('c');
-        break;
-    default : 
-        console.log('none');
-}
-VM4512:13 none
+'참'
+let cond = true
+let value = cond ? '참' : '거짓';
 undefined
