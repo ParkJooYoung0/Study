@@ -1,62 +1,16 @@
-5 > 0 ? '참입니다' : '거짓입니다';
-'참입니다'
-let value = 5 < 0 ? '참입니다' : '거짓입니다'
-undefined
-value
-'거짓입니다'
-if(condition) {
-    value = '참';
-} else {
-    value = '거짓';
+let i = 0;
+while (i < 100) {
+
+    console.log('hello');
+    i++;
 }
-console.log(value);
-VM635:1 Uncaught ReferenceError: condition is not defined
-    at <anonymous>:1:1
-(anonymous) @ VM635:1
-let condition1 =true;
-undefined
-let condition1 = true;
-let condition2 = false;
-let value = condition1 ? (condition2 '둘다참' : condition1만 참') : condition이 거짓';
-VM1048:3 Uncaught SyntaxError: Unexpected string
-let condition1 = true;
-let condition2 = false;
-let value = condition1 ? (condition2 ? '둘다참' : condition1만 참') : condition이 거짓';
-VM1057:3 Uncaught SyntaxError: Unexpected identifier '참'
-let condition1 = true;
-let condition2 = false;
-let value = condition1 ? (condition2 ? '둘 다 참' : condition1만 참') : 'condition이 거짓';
-VM1062:3 Uncaught SyntaxError: Unexpected identifier '참'
-let condition1 = true;
-let condition2 = false;
-let value = condition1 ? (condition2 ? '둘 다 참' : 'condition1만 참') : 'condition1이 거짓';
-console.log(value);
-VM1170:4 condition1만 참
-undefined
-let cond = true;
-let value = '';
-if(cond) {
-    value = '참';
-} else {
-    value = '거짓';
+100VM164:4 hello
+99
+let i = 0;
+while (i <= 99) {
+
+    console.log('hello');
+    i++;
 }
-'참'
-let value = cond ? '참' : '거짓';
-undefined
-let cond = true;
-let value = cond ? '참' : '거짓';
-undefined
-let cond = true;
-let value = '';
-switch (cond) {
-    case true :
-        value : '참';
-        break;
-    case false : 
-        value = '거짓'
-        break;
-}
-'참'
-let cond = true
-let value = cond ? '참' : '거짓';
-undefined
+100VM172:4 hello
+99
