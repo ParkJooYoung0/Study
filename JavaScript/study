@@ -1,18 +1,27 @@
-for (let i = 0; i < 100; i++) {
-    console.log('hello, for!');
-}
-100VM50:2 hello, for!
-undefined
-let i = 1;
-while ( i < 101) {
-    console.log(i+1);
-    i++;
-}
 let i = 0;
-while ( i < 101) {
-    console.log(i+1);
+while (i < 10) {
+    i++;
+    if (1 % 2 === 0) {
+        continue;
+    }
+    console.log(i);
+}
+VM192:7 1
+VM192:7 2
+VM192:7 3
+VM192:7 4
+VM192:7 5
+VM192:7 6
+VM192:7 7
+VM192:7 8
+VM192:7 9
+VM192:7 10
+undefined
+let i =0
+while (true) {
+    if (i === 5) break;
     i++;
 }
-for (let i = 0; i < 100; i++) {
-    console.log(i+1)
-}
+console.log(i);
+VM397:6 5
+undefined
