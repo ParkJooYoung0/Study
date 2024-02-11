@@ -1,16 +1,18 @@
-let i = 0;
-while (i < 100) {
-
-    console.log('hello');
+for (let i = 0; i < 100; i++) {
+    console.log('hello, for!');
+}
+100VM50:2 hello, for!
+undefined
+let i = 1;
+while ( i < 101) {
+    console.log(i+1);
     i++;
 }
-100VM164:4 hello
-99
 let i = 0;
-while (i <= 99) {
-
-    console.log('hello');
+while ( i < 101) {
+    console.log(i+1);
     i++;
 }
-100VM172:4 hello
-99
+for (let i = 0; i < 100; i++) {
+    console.log(i+1)
+}
