@@ -1,57 +1,80 @@
-for (let i = 0; i < 10; i++) {
-    for (let j = 0; j < 10; j++) {
-        console.log(i,j);
-    }
-}
-
-// i==0 j==0 console.log(0,0);
-// i==0 j==1 console.log(0,1);
-// i==0 j==2 console.log(0.2);
-// i==0 j==9 console.log(0,9);
-// i==0 j==10 조건x
-// i==0 j==0 console.log(1,0);
-// i==1 j==9 console.log(1,9);
-// 1==1 j==10 조건x
 for (let i = 0; i < 5; i++) {
-    if (i % 2 === 0) continue;
-     for (let j = 0; j < 5; j++) {
-       if (j % 2 === 0) continue;
-         for (let k = 0; k < 5; k++) {
-             if (k % 2 === 0) continue;
-             console.log(i,j,k);
-         } 
-    }
+    console.log('*'.repeat(i + 1))
+}
+VM266:2 *
+VM266:2 **
+VM266:2 ***
+VM266:2 ****
+VM266:2 *****
+undefined
+for (let i = 5; i >= 1; i--) {
+    console.log('*'.repeat(i))
+}
+VM311:2 *****
+VM311:2 ****
+VM311:2 ***
+VM311:2 **
+VM311:2 *
+undefined
+for (let i = 0; i < 5; i++) {
+    console.log('*'.repeat(5 - i))
+}
+*****
+VM410:2 ****
+VM410:2 ***
+VM410:2 **
+VM410:2 *
+undefined
+for (let i = 0; i < 5; i++) {
+    console.log('*'.repeat(i + (i+1)))
 }
 
-// i==0 continue;
-// i==1 j==0 continue;
-// i==1 j==1 k==0 continue;
-// i==1 j==1 k==1 console.log(1,1,1);
-// i==1 j==1 k==2 continue;
-// i==1 j==1 k==3 console.log(1,1,3)
-// i==1 j==1 k==4 continue;
-// i==1 j==1 k==4 조건x;
-// i==1 j==2 k==0 continue;
-// i==1 j==3 k==1 console.log(1,3,1);
-VM1903:7 1 1 1
-VM1903:7 1 1 3
-VM1903:7 1 3 1
-VM1903:7 1 3 3
-VM1903:7 3 1 1
-VM1903:7 3 1 3
-VM1903:7 3 3 1
-VM1903:7 3 3 3
+// 0 1
+// 1 2
+// 2 5 
+// 3 7 
+// 4 9
+
+VM494:2 *
+VM494:2 ***
+VM494:2 *****
+VM494:2 *******
+VM494:2 *********
 undefined
-// continue사용한 홀수 구구단
-for (let i = 0; i < 10; i++){
-    if(i % 2 === 0) continue;
-    for (let j = 0; j < 10; j++){
-        console.log(i,j,i*j)
-    }
+for (let i = 0; i < 5; i++) {
+    
+    console.log('*'.repeat(9 - i*2))
 }
-// continue사용하지 않은 홀수 구구단
-for (let i = 1; i < 10; i += 2){
-    for (let j = 1; j < 10; j += 2){
-        console.log(i,j,i*j)
-    }
+VM583:3 *********
+VM583:3 *******
+VM583:3 *****
+VM583:3 ***
+VM583:3 *
+undefined
+or (let i = 0; i < 5; i++) {
+    console.log(' '.repeat(i + 1) + '*'.repeat(5 - i))
 }
+VM659:2  *****
+VM659:2   ****
+VM659:2    ***
+VM659:2     **
+VM659:2      *
+undefined
+for (let i = 0; i < 5; i++) {
+    console.log(' '.repeat(5 - i) + '*'.repeat(i + 1))
+}
+VM694:2      *
+VM694:2     **
+VM694:2    ***
+VM694:2   ****
+VM694:2  *****
+undefined
+for (let i = 0; i < 5; i++) {
+    console.log(' '.repeat(5 - i) + '*'.repeat(i + (i + 1)))
+}
+VM736:2      *
+VM736:2     ***
+VM736:2    *****
+VM736:2   *******
+VM736:2  *********
+undefined
