@@ -1,80 +1,63 @@
-for (let i = 0; i < 5; i++) {
-    console.log('*'.repeat(i + 1))
-}
-VM266:2 *
-VM266:2 **
-VM266:2 ***
-VM266:2 ****
-VM266:2 *****
-undefined
-for (let i = 5; i >= 1; i--) {
-    console.log('*'.repeat(i))
-}
-VM311:2 *****
-VM311:2 ****
-VM311:2 ***
-VM311:2 **
-VM311:2 *
-undefined
-for (let i = 0; i < 5; i++) {
-    console.log('*'.repeat(5 - i))
-}
-*****
-VM410:2 ****
-VM410:2 ***
-VM410:2 **
-VM410:2 *
-undefined
-for (let i = 0; i < 5; i++) {
-    console.log('*'.repeat(i + (i+1)))
-}
+const fruits = ['사과','오렌지','배','딸기'];
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+console.log(fruits[3]);
 
-// 0 1
-// 1 2
-// 2 5 
-// 3 7 
-// 4 9
-
-VM494:2 *
-VM494:2 ***
-VM494:2 *****
-VM494:2 *******
-VM494:2 *********
+VM347:2 사과
+VM347:3 오렌지
+VM347:4 배
+VM347:5 딸기
 undefined
-for (let i = 0; i < 5; i++) {
-    
-    console.log('*'.repeat(9 - i*2))
-}
-VM583:3 *********
-VM583:3 *******
-VM583:3 *****
-VM583:3 ***
-VM583:3 *
+const arrayOfArray = [[1,2,3][4,5]];
+arrayOfArray[0]
+const a = 10;
+const b = 20;
+const variableArray = [a,b,30];
+variableArray[1];
+20
+const eveything = ['시과',undefined,true,null];
+const fuplicated = ['가','가','가','가'];
+const empty = [];
 undefined
-or (let i = 0; i < 5; i++) {
-    console.log(' '.repeat(i + 1) + '*'.repeat(5 - i))
-}
-VM659:2  *****
-VM659:2   ****
-VM659:2    ***
-VM659:2     **
-VM659:2      *
+const eveything = ['시과',undefined,true,null];
+console.log(eveything.lenth);
+VM1045:2 undefined
 undefined
-for (let i = 0; i < 5; i++) {
-    console.log(' '.repeat(5 - i) + '*'.repeat(i + 1))
-}
-VM694:2      *
-VM694:2     **
-VM694:2    ***
-VM694:2   ****
-VM694:2  *****
+const eveything = ['시과',undefined,true,null];
+console.log(eveything.length);
+VM1053:2 4
 undefined
-for (let i = 0; i < 5; i++) {
-    console.log(' '.repeat(5 - i) + '*'.repeat(i + (i + 1)))
-}
-VM736:2      *
-VM736:2     ***
-VM736:2    *****
-VM736:2   *******
-VM736:2  *********
+const eveything = ['시과',undefined,true,null];
+console.log(eveything.length-1);
+VM1064:2 3
+undefined
+const arr = [1,2,3,4,5]
+undefined
+arr[arr.length - 3]
+3
+const target = ['a','b','c','d','e'];
+target[5] = 'f';
+console.log(target);
+VM1436:3 (6) ['a', 'b', 'c', 'd', 'e', 'f']
+undefined
+const target = ['a','b','c','d','e'];
+target[target.length] = 'f';
+console.log(target);
+VM1462:3 (6) ['a', 'b', 'c', 'd', 'e', 'f']
+undefined
+const target = ['b','c','d','e'];
+target[0] = 'a';
+console.log(target);
+VM1470:3 (4) ['a', 'c', 'd', 'e']
+undefined
+const target = ['b','c','d','e'];
+target.unshift ('a');
+console.log(target);
+VM1507:3 (5) ['a', 'b', 'c', 'd', 'e']
+undefined
+const target = ['a','b','c','d','e'];
+target.push ('f');
+console.log(target);
+VM1527:3 (6) ['a', 'b', 'c', 'd', 'e', 'f']
 undefined
