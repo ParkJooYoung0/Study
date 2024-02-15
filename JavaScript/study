@@ -1,33 +1,43 @@
-const arr = ['가','라','다','라','마','라'];
-undefined
-arr.indexOf('라')
-1
-arr.splice(1, 1)
-['라']
-arr.indexOf('라')
-2
-arr.splice(2, 1)
-['라']
-arr.indexOf('라')
-3
-arr.splice(3, 1)
-['라']
-arr
-(3) ['가', '다', '마']
-arr.indexOf('라')
--1
-while(arr.indexOf('라') > -1) {
-    arr.splice(arr.indexOf('라'),1)
-}
+//함수 이름 붙이기
+function a() {} //함수선언문
+const b = function() {}; //함수표현식
+const c = () => {} //화살표 함수
 
-['라']
-arr
-(3) ['가', '다', '마']
-let index = arr.indexOf('라');
-while (index > -1) {
-    arr.splice(index, 1);
-    index = arr.indexOf('라');
+function a() {} //함수 선언
+a(); //호출
+
+function a() {
+    console.log('hello');
+    console.log('function');
 }
 undefined
-arr
-(3) ['가', '다', '마']
+a()
+VM678:2 hello
+VM678:3 function
+undefined
+
+function g() {
+    return'반환값'
+}
+undefined
+g()
+'반환값'
+
+function f() {
+    return 'hello';
+    console.log('hi');
+}
+undefined
+f()
+'hello'
+
+function d() {
+    if (false) {
+        return
+    }
+    console.log('hi');
+}
+undefined
+d()
+VM897:5 hi
+undefined
