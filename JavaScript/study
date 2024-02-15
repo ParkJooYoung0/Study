@@ -1,80 +1,33 @@
-const target = ['a','b','c','d','e'];
-target.pop ();
-console.log(target);
-VM1610:3 (4) ['a', 'b', 'c', 'd']
+const arr = ['가','라','다','라','마','라'];
 undefined
-const target = ['a','b','c','d','e'];
-target.shift ();
-console.log(target);
-VM1634:3 (4) ['b', 'c', 'd', 'e']
-undefined
-const target = ['a','b','c','d','e'];
-target.splice (1,1);
-console.log(target);
-VM1658:3 (4) ['a', 'c', 'd', 'e']
-undefined
-const target = ['a','b','c','d','e'];
-target.splice (2,2);
-console.log(target);
-VM1673:3 (3) ['a', 'b', 'e']
-undefined
-const target = ['a','b','c','d','e'];
-target.splice (2);
-console.log(target);
-VM1682:3 (2) ['a', 'b']
-undefined
-const target = ['a','b','c','d','e'];
-target.splice (1,2 '가','나');
-console.log(target);
-VM1711:2 Uncaught SyntaxError: missing ) after argument list
-const target = ['a','b','c','d','e'];
-target.splice (1,2, '가','나');
-console.log(target);
-VM1717:3 (5) ['a', '가', '나', 'd', 'e']
-undefined
-const target = ['a','b','c','d','e'];
-target.splice (1,0,'가');
-console.log(target);
-VM1749:3 (6) ['a', '가', 'b', 'c', 'd', 'e']
-undefined
-const target = ['a','b','c','d','e'];
-const result = target.includes('가');
-const result2 = target.includes('a');
-console.log(result);
-console.log(result2);
-VM640:4 false
-VM640:5 true
-undefined
-const target = ['a','b','c','d','e'];
-const result = target.indexOf('b');
-const result2 = target.lastIndexOf('d');
-const result3 = target.indexOf('f');
-console.log(result);
-console.log(result2);
-console.log(result3);
-VM867:5 1
-VM867:6 3
-VM867:7 -1
-undefined
-const target = ['a','b','c','d','e'];
-let i = 0;
-while(i < target.length) {
-    console.log(target[i]);
-    i++
+arr.indexOf('라')
+1
+arr.splice(1, 1)
+['라']
+arr.indexOf('라')
+2
+arr.splice(2, 1)
+['라']
+arr.indexOf('라')
+3
+arr.splice(3, 1)
+['라']
+arr
+(3) ['가', '다', '마']
+arr.indexOf('라')
+-1
+while(arr.indexOf('라') > -1) {
+    arr.splice(arr.indexOf('라'),1)
 }
-VM243:4 a
-VM243:4 b
-VM243:4 c
-VM243:4 d
-VM243:4 e
-4
-const target = ['a','b','c','d','e'];
-for(let i = 0; i < target.length; i++) {
-    console.log(target[i]);
+
+['라']
+arr
+(3) ['가', '다', '마']
+let index = arr.indexOf('라');
+while (index > -1) {
+    arr.splice(index, 1);
+    index = arr.indexOf('라');
 }
-VM290:3 a
-VM290:3 b
-VM290:3 c
-VM290:3 d
-VM290:3 e
 undefined
+arr
+(3) ['가', '다', '마']
