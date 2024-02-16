@@ -30,3 +30,16 @@ const debug = {
 debug.log('hi, Method');
 VM1945:3 hi, Method
 undefined
+
+const v = {name:jooyoung};
+const array = [1,2,v];
+console.log(v === array[2]);
+VM2190:3 true
+undefined
+
+const a = {name: 'jooyoung'};
+const b = a;
+a.name = 'hero';
+console.log(b.name);
+VM2452:4 hero
+undefined
