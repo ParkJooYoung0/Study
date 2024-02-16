@@ -1,40 +1,32 @@
-function a(parameter) {
-    console.log(parameter);
-}
-a('argument');
-VM202:2 argument
+const jooyoung = {
+    name : '박주영',
+    year : 1998,
+    month : 09,
+    date : 12,
+  }
+  undefined
+
+  console.log(jooyoung.name);
+console.log(jooyoung['month']);
+
+VM1287:1 박주영
+VM1287:2 9
 undefined
 
-function a(q,w,e,r) {
-    console.log(q,w,e,r);
-    console.log(arguments);
-}
-a('hi','hello','bye');
-VM354:2 hi hello bye undefined
-VM354:3 Arguments(3) ['hi', 'hello', 'bye', callee: ƒ, Symbol(Symbol.iterator): ƒ]
+jooyoung.gender = 'F';
+console.log(jooyoung.gender);
+VM1564:2 F
+undefined
+delete jooyoung.name;
+console.log(jooyoung.name);
+VM1737:2 undefined
 undefined
 
-function a(q,w) {
-    console.log(q,w);
-    console.log(arguments);
-}
-a('hi','hello','bye');
-VM376:2 hi hello
-VM376:3 Arguments(3) ['hi', 'hello', 'bye', callee: ƒ, Symbol(Symbol.iterator): ƒ]
+const debug = {
+    log : function(value) {
+        console.log(value);
+    },
+};
+debug.log('hi, Method');
+VM1945:3 hi, Method
 undefined
-
-function add (x,y) {
-    return x + y;
-}
-console.log(add(3,5));
-console.log(add(8,7));
-VM645:4 8
-VM645:5 15
-undefined
-
-const f = (x, y, z) => {
-    return x*y*z;
-}
-undefined
-f(2,3,4)
-24
