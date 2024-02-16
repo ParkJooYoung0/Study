@@ -1,43 +1,40 @@
-//함수 이름 붙이기
-function a() {} //함수선언문
-const b = function() {}; //함수표현식
-const c = () => {} //화살표 함수
+function a(parameter) {
+    console.log(parameter);
+}
+a('argument');
+VM202:2 argument
+undefined
 
-function a() {} //함수 선언
-a(); //호출
+function a(q,w,e,r) {
+    console.log(q,w,e,r);
+    console.log(arguments);
+}
+a('hi','hello','bye');
+VM354:2 hi hello bye undefined
+VM354:3 Arguments(3) ['hi', 'hello', 'bye', callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
 
-function a() {
-    console.log('hello');
-    console.log('function');
+function a(q,w) {
+    console.log(q,w);
+    console.log(arguments);
+}
+a('hi','hello','bye');
+VM376:2 hi hello
+VM376:3 Arguments(3) ['hi', 'hello', 'bye', callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+
+function add (x,y) {
+    return x + y;
+}
+console.log(add(3,5));
+console.log(add(8,7));
+VM645:4 8
+VM645:5 15
+undefined
+
+const f = (x, y, z) => {
+    return x*y*z;
 }
 undefined
-a()
-VM678:2 hello
-VM678:3 function
-undefined
-
-function g() {
-    return'반환값'
-}
-undefined
-g()
-'반환값'
-
-function f() {
-    return 'hello';
-    console.log('hi');
-}
-undefined
-f()
-'hello'
-
-function d() {
-    if (false) {
-        return
-    }
-    console.log('hi');
-}
-undefined
-d()
-VM897:5 hi
-undefined
+f(2,3,4)
+24
