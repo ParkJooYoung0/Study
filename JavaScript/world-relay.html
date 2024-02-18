@@ -15,18 +15,30 @@
 <input type="text">
 <button>입력</button>
 <script>
-    const number = parseInt (prompt ('몇 명이 참가하나요?'), 10);
-    alert (number);
-    const yesOrNo = confirm('맞나요?');
+  const number = parseInt (prompt ('몇 명이 참가하나요?'), 10);
+  const $button = document.querySelector('button');
+  const $input = document.querySelector('input');
+  const $word = document.querySelector('#word');
+  let word; //제시어
+  let newWord; //새로 입력한 단어
+  
+  const onInput = (event) => {
+    newWord = event.target.value;
+  };
+  const onClickbutton = (event) => {
+    if(!word) {//제시어가 비어있는가?
+      //비어있다.
+      word = newWord; //입력한 단어가 제시어가 된다.
+      $word.textContent = word;
+      $input.value = '';
+    } else {
+      //비어있지 않다.
 
-    document.querySelector('input').addEventListener('input' , (event) => {
-      console.log('글자입력', event.target.value)
-    });
-
-    const onClick = function(){
-      console.log('버튼 클릭');
     }
-    document.querySelector('button').addEventListener('click' , onClick);
+  };
+
+  $input.addEventListener('input', onInput)
+  $button.addEventListener('click' , onClickbutton);
 </script>
 </body>
 
