@@ -45,12 +45,17 @@
     const $operator = document.querySelector('#operator');
     const $result = document.querySelector('#result');
     const onClickNumber = (event) => {
-            if (operator) {
-              numTwo += event.target.textContent;
-            } else {
-              numOne += event.target.textContent;
-            }
-            $result.value += event.target.textContent;
+          if (!operator) { //비어있다.
+          numOne += event.target.textContent;
+          $result.value += event.target.textContent;
+          return;
+          }
+           //비어있지 않다.
+          if(!numTwo) {
+            $result.value = '';
+          }
+          numTwo += event.target.textContent;
+          $result.value += event.target.textContent;
         };
 
     document.querySelector('#num-0').addEventListener('click', onClickNumber);
@@ -77,7 +82,7 @@
     document.querySelector('#minus').addEventListener('click', onClickOperator('-'));
     document.querySelector('#divide').addEventListener('click', onClickOperator('/'));
     document.querySelector('#multyply').addEventListener('click', onClickOperator('*'));
-    document.querySelector('#calculate').addEventListener('click', onClickOperator());
-    document.querySelector('#clear').addEventListener('click', onClickOperator);
+    document.querySelector('#calculate').addEventListener('click', () => {});
+    document.querySelector('#clear').addEventListener('click', () => {});
   </script>
   </body>
