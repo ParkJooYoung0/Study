@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>로또추첨기</title>
+  <style>
+    .ball {
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 20px;
+      text-align: center;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+<form id="form">
+    <input name="input" placeholder="숫자를 입력하세요."/>
+    <button>추첨</button>
+</form>
+<div id="result">추첨 결과는? </div>
+<div id="bonus">보너스: </div>
+<script>
+    const $form = document.querySelector('#form');
+    const $result = document.querySelector('#result');
+    const $bonus = document.querySelector('#bonus');
+    $form.addEventListener('submit',(evnt) => {
+        event.preventDefault();
+        //검사
+        const string = event.target.input.value;
+        if (!string.trim()) {
+        return alert('숫자를 입력하세요.');
+        }
+        const myNumbers = string.split(',').map((v) => parseInt(v.trim()));
+        if (myNumbers.length !== 6) {
+            return alert ('숫자를 6개 입력하세요.');
+        }
+        if (new Set(myNumbers).size !==6) {
+            return alert ('중복된 숫자를 입력했습니다.');
+        }
+        if (myNumbers.find((v) => v > 45 || v < 1)) {
+            return alert ('1부터 45까지만 입력할 수 있습니다.');
+        }
+    });
+</script>
