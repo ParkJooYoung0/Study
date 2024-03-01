@@ -27,6 +27,12 @@
     const $form = document.querySelector('#form');
     const $result = document.querySelector('#result');
     const $bonus = document.querySelector('#bonus');
+    function drawBall($target,value) {
+          const $ball = document.createElement('div');
+          $ball.className = 'ball';
+          $ball.textContent = value;
+          $target.appendChild($ball);
+        }
     $form.addEventListener('submit',(evnt) => {
         event.preventDefault();
         //검사
@@ -55,7 +61,15 @@
         console.log(shuffle);
         const winBalls = shuffle.slice(0,6).sort((a,b) => a - b);
         const bonus = shuffle[6];
-        console.log(winBalls, bonus);
+        for (let i = 0; i < 6; i++) {
+          setTimeout(() => {
+          drawBall($result, winBalls[i])
+        }, (i + 1) * 1000);
+        }
+       
+        setTimeout(() => {
+          drawBall($bonus, bonus)
+        }, 7000);
     });
 </script>
 </body>
