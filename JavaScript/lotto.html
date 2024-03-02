@@ -28,16 +28,40 @@
     const $result = document.querySelector('#result');
     const $bonus = document.querySelector('#bonus');
     function drawBall($target,value) {
-          const $ball = document.createElement('div');
-          $ball.className = 'ball';
-          $ball.textContent = value;
-          $target.appendChild($ball);
-        }
+      const $ball = document.createElement('div');
+      $ball.className = 'ball';
+      $ball.textContent = value;
+      colorize(value, $ball);
+      $target.appendChild($ball);
+    }
+    function colorize(value, $tag) {
+      if (value < 10) {
+        $tag.style.background = 'red';
+        $tag.style.color = 'white';
+      } else if (value < 20) {
+        $tag.style.background = 'orange';
+      }  else if (value < 30) {
+        $tag.style.background = 'yellow';
+      }  else if (value < 40) {
+        $tag.style.background = 'blue';
+        $tag.style.color = 'white';
+      } else {
+        $tag.style.background = 'green';
+        $tag.style.color = 'white';
+      }
+    }
     const setTimeoutPromise = (ms) => new Promise((resolve, reject) => {
       setTimeout(resolve, ms);
     });
+    let clicked = false;
     $form.addEventListener('submit', async (evnt) => {
-        event.preventDefault();
+      event.preventDefault();
+      if (clicked) {
+        return;
+      }
+      clicked = true;
+      $result.innerHTML = '추첨 결과는? ';
+      $bonus.innerHTML = '보너스: ';
         //검사
         const string = event.target.input.value;
         if (!string.trim()) {
@@ -92,6 +116,7 @@
             } else {
               alert ('로또 참 어렵죠?');
             }
+            clicked = false;
       });
 </script>
 </body>
