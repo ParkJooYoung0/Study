@@ -33,7 +33,10 @@
           $ball.textContent = value;
           $target.appendChild($ball);
         }
-    $form.addEventListener('submit',(evnt) => {
+    const setTimeoutPromise = (ms) => new Promise((resolve, reject) => {
+      setTimeout(resolve, ms);
+    });
+    $form.addEventListener('submit', async (evnt) => {
         event.preventDefault();
         //검사
         const string = event.target.input.value;
@@ -61,15 +64,34 @@
         console.log(shuffle);
         const winBalls = shuffle.slice(0,6).sort((a,b) => a - b);
         const bonus = shuffle[6];
+
         for (let i = 0; i < 6; i++) {
-          setTimeout(() => {
-          drawBall($result, winBalls[i])
-        }, (i + 1) * 1000);
+          await setTimeoutPromise(1000);
+          drawBall($result, winBalls[i]);
         }
-       
-        setTimeout(() => {
-          drawBall($bonus, bonus)
-        }, 7000);
-    });
+        await setTimeoutPromise(1000);
+          drawBall($bonus, bonus);
+          await setTimeoutPromise(0);
+          let count = 0;
+          myNumbers.forEach((my) => {
+            if (winBalls.includes(my))
+              count++;
+          });
+          if(count === 6) {
+            alert ('1등입니다.');
+          } else if (count === 5) {
+            if(myNumbers.includes(bonus)) {
+              alert ('2등입니다.');
+            } else {
+              alert('3등입니다.')
+            }
+            } else if (count === 4) {
+              alert ('4등입니다.');
+            } else if (count === 3) {
+              alert ('5등입니다.');
+            } else {
+              alert ('로또 참 어렵죠?');
+            }
+      });
 </script>
 </body>
